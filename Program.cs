@@ -37,6 +37,8 @@
         switch (randomWord)
         {
             case 0:
+                bool guessedLetter = false;
+
                 for (int i = 0; i < selectedString.Length; i++)
                 {
                     if (selectedString[i] == guess[0])
@@ -44,9 +46,19 @@
                         char[] charArray = hiddenWord.ToCharArray();
                         charArray[i] = guess[0];
                         hiddenWord = new string(charArray);
+                        guessedLetter = true;
                     }
                 }
-                Console.WriteLine(hiddenWord);
+                
+                if (guessedLetter)
+                {
+                    Console.WriteLine(hiddenWord);
+                }
+                else
+                {
+                    Console.WriteLine("That letter is not in this word. You lost a life.");
+                    GameStats.Lives();
+                }
                 break;
         }
 
