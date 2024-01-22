@@ -31,33 +31,37 @@
 
         Console.WriteLine($"Your word: {hiddenWord}");
 
-        Console.WriteLine("Guess a letter");
-        string guess = Console.ReadLine();
 
         switch (randomWord)
         {
             case 0:
-                bool guessedLetter = false;
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
 
-                for (int i = 0; i < selectedString.Length; i++)
-                {
-                    if (selectedString[i] == guess[0])
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
                     {
-                        char[] charArray = hiddenWord.ToCharArray();
-                        charArray[i] = guess[0];
-                        hiddenWord = new string(charArray);
-                        guessedLetter = true;
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
                     }
-                }
-                
-                if (guessedLetter)
-                {
-                    Console.WriteLine(hiddenWord);
-                }
-                else
-                {
-                    Console.WriteLine("That letter is not in this word. You lost a life.");
-                    GameStats.Lives();
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
                 }
                 break;
         }
