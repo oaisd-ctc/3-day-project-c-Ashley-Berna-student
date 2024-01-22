@@ -1,10 +1,11 @@
 public static class GameStats
 {
     private static string[] letters;
+    public static int lives = 6;
 
     static GameStats()
     {
-        letters = new string[24];
+        letters = new string[26];
     }
 
     public static string MakeHiddenWord(string input, char symbol)
@@ -31,5 +32,9 @@ public static class GameStats
                 return;
             }
         }
+    }
+    public static void Lives()
+    {
+        lives--;
     }
 }
