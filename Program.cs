@@ -6,9 +6,9 @@
         System.Console.WriteLine("The goal of this game is to guess the random word before running out of lives.");
         System.Console.WriteLine("You have 6 lives. You will input a single letter at a time.");
         System.Console.WriteLine("The game will then tell you if the word has any of that letter in it.");
-        System.Console.WriteLine("If the word does have some of that letter the game will reprint out the word \nwith the unguessed blanks and the correct letters in the word. ");
+        System.Console.WriteLine("If the word does have some of that letter the game will reprint out the word \nwith the unguessed letters as blanks and the correct letters filled in the word. ");
         System.Console.WriteLine("And that covers it. Very complicated I know. All I have left to say is good luck.");
-        
+
         //hi
         string super " supercalifragilisticexpialidocious";
         string odd "odd";
