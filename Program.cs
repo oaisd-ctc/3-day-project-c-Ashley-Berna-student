@@ -39,16 +39,11 @@
             case 0:
                 for (int i = 0; i < selectedString.Length; i++)
                 {
-                    if (selectedString[i] == 'a')
+                    if (selectedString[i] == guess[0])
                     {
                         char[] charArray = hiddenWord.ToCharArray();
-                        charArray[i] = 'a';
+                        charArray[i] = guess[0];
                         hiddenWord = new string(charArray);
-                    }
-                    if (selectedString[i] == 'c')
-                    {
-                        char[] charArray = hiddenWord.ToCharArray();
-                        charArray
                     }
                 }
                 Console.WriteLine(hiddenWord);
