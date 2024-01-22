@@ -36,5 +36,6 @@ public static class GameStats
     public static void Lives()
     {
         lives--;
+        System.Console.WriteLine("You have " + lives + " lives left.");
     }
 }
