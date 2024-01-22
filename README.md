@@ -1,2 +1,3 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=13463837)
-Find the random word that is given to you. You have six lives before you lose.
+This project is a random word guessing game. Where the user will be trying to guess a randomly selected word.
+The user will hava 6 lives in total. A live is lost each time the player doesn't guess a letter that is in the word.
+When the user does guess a letter that is in the word, the word will be reprinted with the previous guessed letters being shown and the unguessed letters being shown as asterisks.
