@@ -12,7 +12,7 @@
 
         Random random = new Random();
 
-        string super = " supercalifragilisticexpialidocious";
+        string super = "supercalifragilisticexpialidocious";
         string odd = "odd";
         string ob = "obfuscate";
         string ind = "indistinguishableness";
@@ -27,10 +27,28 @@
 
         string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : moo;
 
-        string spaces = selectedString.Replace(' ', '_');
+        selectedString = "supercalifragilisticexpialidocious";
         string hiddenWord = GameStats.MakeHiddenWord(selectedString, '*');
 
-        Console.WriteLine(selectedString);
+        Console.WriteLine($"Your word: {hiddenWord}");
+
+        Console.WriteLine("Guess a letter");
+        string guess = Console.ReadLine();
+
+        switch (randomWord)
+        {
+            case 0:
+                for (int i = 0; i < selectedString.Length; i++)
+                {
+                    if (selectedString[i] == 'a')
+                    {
+                        char[] charArray = selectedString.ToCharArray();
+                        charArray[i] = 'a';
+                        selectedString = new string(charArray);
+                    }
+                }
+                break;
+        }
 
     }
 }
