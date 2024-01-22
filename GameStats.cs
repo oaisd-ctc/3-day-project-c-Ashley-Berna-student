@@ -1,6 +1,6 @@
-public class GameStats
+public static class GameStats
 {
-    static string MakingHiddenWord(string input, char symbol)
+    public static string MakeHiddenWord(string input, char symbol)
     {
         char[] charArray = input.ToCharArray();
 
