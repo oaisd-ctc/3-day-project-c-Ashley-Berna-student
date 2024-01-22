@@ -24,11 +24,10 @@
         string buff = "buffet";
         string moo = "moose";
 
-        int randomWord = random.Next(10);
+        int randomWord = random.Next(0);
 
         string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : moo;
 
-        selectedString = "supercalifragilisticexpialidocious";
         string hiddenWord = GameStats.MakeHiddenWord(selectedString, '*');
 
         Console.WriteLine($"Your word: {hiddenWord}");
@@ -43,11 +42,17 @@
                 {
                     if (selectedString[i] == 'a')
                     {
-                        char[] charArray = selectedString.ToCharArray();
+                        char[] charArray = hiddenWord.ToCharArray();
                         charArray[i] = 'a';
-                        selectedString = new string(charArray);
+                        hiddenWord = new string(charArray);
+                    }
+                    if (selectedString[i] == 'c')
+                    {
+                        char[] charArray = hiddenWord.ToCharArray();
+                        charArray
                     }
                 }
+                Console.WriteLine(hiddenWord);
                 break;
         }
 
