@@ -1,7 +1,12 @@
 public static class GameStats
 {
-    private string[] letters;
-    letters = new string[24];
+    private static string[] letters;
+
+    static GameStats()
+    {
+        letters = new string[24];
+    }
+
     public static string MakeHiddenWord(string input, char symbol)
     {
         char[] charArray = input.ToCharArray();
@@ -13,13 +18,15 @@ public static class GameStats
                 charArray[i] = symbol;
             }
         }
-        return new string (charArray);
+
+        return new string(charArray);
     }
-    public void UsedLetters(string word)
+
+    public static void UsedLetters(string item)
     {
-        for (int i = 0; i < letters.length; i++)
+        for (int i = 0; i < letters.Length; i++)
         {
-            if (letters[i] = item;)
+            if (letters[i] == item)
             {
                 return;
             }
