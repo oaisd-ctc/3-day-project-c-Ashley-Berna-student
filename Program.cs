@@ -335,6 +335,13 @@
                 }
                 break;
         }
-
+        if (GameStats.GetLives() > 0)
+        {
+            Console.WriteLine("Congradulations you won!!!!!!!!!!!");
+        }
+        else
+        {
+            Console.WriteLine("You lost LOL. (sad face).");
+        }
     }
 }
