@@ -38,6 +38,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -56,11 +57,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -68,6 +71,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -86,11 +90,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -98,6 +104,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -116,11 +123,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -128,6 +137,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -146,11 +156,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -158,6 +170,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -176,11 +189,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -188,6 +203,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -206,11 +222,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -218,6 +236,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -236,11 +255,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -248,6 +269,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -266,11 +288,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -278,6 +302,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -296,11 +321,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -308,6 +335,7 @@
                 while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
                     string guess = Console.ReadLine();
 
                     bool guessedLetter = false;
@@ -326,11 +354,13 @@
                     if (guessedLetter)
                     {
                         Console.WriteLine(hiddenWord);
+                        GameStats.AddLetters(guess);
                     }
                     else
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        GameStats.AddLetters(guess);
                     }
                 }
                 break;
@@ -342,6 +372,7 @@
         else
         {
             Console.WriteLine("You lost LOL. (sad face).");
+            Console.WriteLine($"This was your word: {selectedString}");
         }
     }
 }
