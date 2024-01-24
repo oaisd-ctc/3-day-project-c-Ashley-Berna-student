@@ -1,11 +1,23 @@
-public static class GameStats
+public class GameStats
 {
-    private static string[] letters;
+    private static string[] letters = new string[26];
     public static int lives = 6;
 
-    static GameStats()
+    public static void AddLetters(string item)
     {
-        letters = new string[26];
+        for (int i = 0; i < letters.Length; i++)
+        {
+            if (letters[i] == null)
+            {
+                letters[i] = item;
+                break;
+            }
+        }
+    }
+
+    public static string[] GetLetters()
+    {
+        return letters.Where(letters => letters != null).ToArray() ?? Array.Empty<string>();
     }
 
     public static string MakeHiddenWord(string input, char symbol)
@@ -21,17 +33,6 @@ public static class GameStats
         }
 
         return new string(charArray);
-    }
-
-    public static void UsedLetters(string item)
-    {
-        for (int i = 0; i < letters.Length; i++)
-        {
-            if (letters[i] == item)
-            {
-                return;
-            }
-        }
     }
     public static void Lives()
     {
