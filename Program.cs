@@ -22,10 +22,15 @@
         string guy = "guy on a buffalo";
         string buff = "buffet";
         string moo = "moose";
+        string eph = "ephemeral";
+        string le = "lethologica";
+        string qui = "quixotic";
+        string mel = "mellifluous";
+        string per = "perspicacious";
 
-        int randomWord = random.Next(10);
+        int randomWord = random.Next(15);
 
-        string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : moo;
+        string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : (randomWord == 9) ? moo : (randomWord == 10) ? eph : (randomWord == 11) ? le : (randomWord == 12) ? qui : (randomWord == 13) ? mel : per;
 
         string hiddenWord = GameStats.MakeHiddenWord(selectedString, '*');
 
