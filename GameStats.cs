@@ -38,4 +38,9 @@ public static class GameStats
         lives--;
         System.Console.WriteLine("You have " + lives + " lives left.");
     }
+
+    public static int GetLives()
+    {
+        return lives;
+    }
 }

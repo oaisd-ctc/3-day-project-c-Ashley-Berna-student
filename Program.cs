@@ -35,7 +35,7 @@
         switch (randomWord)
         {
             case 0:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -65,7 +65,7 @@
                 }
                 break;
             case 1:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -95,7 +95,7 @@
                 }
                 break;
             case 2:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -125,7 +125,7 @@
                 }
                 break;
             case 3:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -155,7 +155,7 @@
                 }
                 break;
             case 4:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -185,7 +185,7 @@
                 }
                 break;
             case 5:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -215,7 +215,7 @@
                 }
                 break;
             case 6:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -245,7 +245,7 @@
                 }
                 break;
             case 7:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -275,7 +275,7 @@
                 }
                 break;
             case 8:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
@@ -305,7 +305,7 @@
                 }
                 break;
             case 9:
-                while (hiddenWord.Contains('*'))
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
                 {
                     Console.WriteLine("Guess a letter");
                     string guess = Console.ReadLine();
