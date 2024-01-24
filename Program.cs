@@ -66,6 +66,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -108,6 +109,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -150,6 +152,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -192,6 +195,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -234,6 +238,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -276,6 +281,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -318,6 +324,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -360,6 +367,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -402,6 +410,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
@@ -444,6 +453,7 @@
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You already guessed this letter. Guess again.");
                     }
                     if (!guessedLetter)
