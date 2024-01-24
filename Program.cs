@@ -23,7 +23,7 @@
         string buff = "buffet";
         string moo = "moose";
 
-        int randomWord = random.Next(0);
+        int randomWord = random.Next(10);
 
         string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : moo;
 
@@ -185,14 +185,155 @@
                 }
                 break;
             case 5:
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
 
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
+                    {
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
+                    }
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
+                }
+                break;
             case 6:
-            
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
+                    {
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
+                    }
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
+                }
+                break;
             case 7:
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
 
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
+                    {
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
+                    }
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
+                }
+                break;
             case 8:
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
 
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
+                    {
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
+                    }
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
+                }
+                break;
             case 9:
+                while (hiddenWord.Contains('*'))
+                {
+                    Console.WriteLine("Guess a letter");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    for (int i = 0; i < selectedString.Length; i++)
+                    {
+                        if (selectedString[i] == guess[0])
+                        {
+                            char[] charArray = hiddenWord.ToCharArray();
+                            charArray[i] = guess[0];
+                            hiddenWord = new string(charArray);
+                            guessedLetter = true;
+                        }
+                    }
+                    
+                    if (guessedLetter)
+                    {
+                        Console.WriteLine(hiddenWord);
+                    }
+                    else
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                    }
+                }
+                break;
         }
 
     }
