@@ -55,7 +55,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -71,6 +72,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -95,7 +97,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -111,6 +114,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -135,7 +139,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -151,6 +156,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -175,7 +181,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -191,6 +198,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -215,7 +223,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -231,6 +240,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -255,7 +265,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -271,6 +282,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -295,7 +307,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -311,6 +324,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -335,7 +349,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -351,6 +366,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -375,7 +391,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -391,6 +408,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
@@ -415,7 +433,8 @@
                                 guessedLetter = true;
                             }
                         }
-                        
+                        Console.Clear();
+
                         if (guessedLetter)
                         {
                             Console.WriteLine(hiddenWord);
@@ -431,6 +450,7 @@
                     {
                         Console.WriteLine("That letter is not in this word. You lost a life.");
                         GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
                     }
                 }
                 break;
