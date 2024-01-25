@@ -684,6 +684,221 @@
                     }
                 }
                 break;
+            case 15:
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
+                {
+                    Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    if (!GameStats.GetLetters().Contains(guess))
+                    {
+                        for (int i = 0; i < selectedString.Length; i++)
+                        {
+                            if (selectedString[i] == guess[0])
+                            {
+                                char[] charArray = hiddenWord.ToCharArray();
+                                charArray[i] = guess[0];
+                                hiddenWord = new string(charArray);
+                                guessedLetter = true;
+                            }
+                        }
+                        Console.Clear();
+
+                        if (guessedLetter)
+                        {
+                            Console.WriteLine(hiddenWord);
+                        }
+
+                        GameStats.AddLetters(guess);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You already guessed this letter. Guess again.");
+                    }
+                    if (!guessedLetter)
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
+                    }
+                }
+                break;
+            case 16:
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
+                {
+                    Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    if (!GameStats.GetLetters().Contains(guess))
+                    {
+                        for (int i = 0; i < selectedString.Length; i++)
+                        {
+                            if (selectedString[i] == guess[0])
+                            {
+                                char[] charArray = hiddenWord.ToCharArray();
+                                charArray[i] = guess[0];
+                                hiddenWord = new string(charArray);
+                                guessedLetter = true;
+                            }
+                        }
+                        Console.Clear();
+
+                        if (guessedLetter)
+                        {
+                            Console.WriteLine(hiddenWord);
+                        }
+
+                        GameStats.AddLetters(guess);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You already guessed this letter. Guess again.");
+                    }
+                    if (!guessedLetter)
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
+                    }
+                }
+                break;
+            case 17:
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
+                {
+                    Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    if (!GameStats.GetLetters().Contains(guess))
+                    {
+                        for (int i = 0; i < selectedString.Length; i++)
+                        {
+                            if (selectedString[i] == guess[0])
+                            {
+                                char[] charArray = hiddenWord.ToCharArray();
+                                charArray[i] = guess[0];
+                                hiddenWord = new string(charArray);
+                                guessedLetter = true;
+                            }
+                        }
+                        Console.Clear();
+
+                        if (guessedLetter)
+                        {
+                            Console.WriteLine(hiddenWord);
+                        }
+
+                        GameStats.AddLetters(guess);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You already guessed this letter. Guess again.");
+                    }
+                    if (!guessedLetter)
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
+                    }
+                }
+                break;
+            case 18:
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
+                {
+                    Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    if (!GameStats.GetLetters().Contains(guess))
+                    {
+                        for (int i = 0; i < selectedString.Length; i++)
+                        {
+                            if (selectedString[i] == guess[0])
+                            {
+                                char[] charArray = hiddenWord.ToCharArray();
+                                charArray[i] = guess[0];
+                                hiddenWord = new string(charArray);
+                                guessedLetter = true;
+                            }
+                        }
+                        Console.Clear();
+
+                        if (guessedLetter)
+                        {
+                            Console.WriteLine(hiddenWord);
+                        }
+
+                        GameStats.AddLetters(guess);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You already guessed this letter. Guess again.");
+                    }
+                    if (!guessedLetter)
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
+                    }
+                }
+                break;
+            case 19:
+                while (hiddenWord.Contains('*') && GameStats.GetLives() > 0)
+                {
+                    Console.WriteLine("Guess a letter");
+                    Console.WriteLine($"Your guessed letters: {string.Join(", ", GameStats.GetLetters())}");
+                    string guess = Console.ReadLine();
+
+                    bool guessedLetter = false;
+
+                    if (!GameStats.GetLetters().Contains(guess))
+                    {
+                        for (int i = 0; i < selectedString.Length; i++)
+                        {
+                            if (selectedString[i] == guess[0])
+                            {
+                                char[] charArray = hiddenWord.ToCharArray();
+                                charArray[i] = guess[0];
+                                hiddenWord = new string(charArray);
+                                guessedLetter = true;
+                            }
+                        }
+                        Console.Clear();
+
+                        if (guessedLetter)
+                        {
+                            Console.WriteLine(hiddenWord);
+                        }
+
+                        GameStats.AddLetters(guess);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("You already guessed this letter. Guess again.");
+                    }
+                    if (!guessedLetter)
+                    {
+                        Console.WriteLine("That letter is not in this word. You lost a life.");
+                        GameStats.Lives();
+                        Console.WriteLine(hiddenWord);
+                    }
+                }
+                break;
         }
         if (GameStats.GetLives() > 0)
         {
