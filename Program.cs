@@ -23,7 +23,7 @@
         string buff = "buffet";
         string moo = "moose";
 
-        int randomWord = random.Next(20);
+        int randomWord = random.Next(15);
 
         string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : moo;
 
