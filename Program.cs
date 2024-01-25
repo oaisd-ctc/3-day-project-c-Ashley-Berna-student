@@ -27,10 +27,15 @@
         string qui = "quixotic";
         string mel = "mellifluous";
         string per = "perspicacious";
+        string yet = "yowie";
+        string pl = "plait";
+        string zi = "zibet";
+        string qu = "quash";
+        string fyt = "fytte";
 
-        int randomWord = random.Next(15);
+        int randomWord = random.Next(20);
 
-        string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : (randomWord == 9) ? moo : (randomWord == 10) ? eph : (randomWord == 11) ? le : (randomWord == 12) ? qui : (randomWord == 13) ? mel : per;
+        string selectedString = (randomWord == 0) ? super : (randomWord == 1) ? odd : (randomWord == 2) ? ob : (randomWord == 3) ? ind : (randomWord == 4) ? hipo : (randomWord == 5) ? me : (randomWord == 6) ? gir : (randomWord == 7) ? guy : (randomWord == 8) ? buff : (randomWord == 9) ? moo : (randomWord == 10) ? eph : (randomWord == 11) ? le : (randomWord == 12) ? qui : (randomWord == 13) ? mel : (randomWord == 14) ? per : (randomWord == 15) ? yet : (randomWord == 16) ? pl : (randomWord == 17) ? zi : (randomWord == 18) ? qui : fyt;
 
         string hiddenWord = GameStats.MakeHiddenWord(selectedString, '*');
 
